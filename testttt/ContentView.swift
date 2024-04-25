@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var expandedIndexes: Set<Int> = []
     
     let accordionData = [
-        ("Accordion 1 Title", "Accordion 1 Content"),
+        ("Accordion 1 Title", "Accordion 1 Contentt"),
         ("Accordion 2 Title", "Accordion 2 Content"),
         ("Accordion 3 Title", "Accordion 3 Content"),
         ("Accordion 4 Title", "Accordion 4 Content"),
