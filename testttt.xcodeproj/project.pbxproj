@@ -16,6 +16,7 @@
 		819EE2312BDA071600B082BF /* testtttUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EE2302BDA071600B082BF /* testtttUITestsLaunchTests.swift */; };
 		819EE2422BDA998200B082BF /* imagelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EE2412BDA998200B082BF /* imagelist.swift */; };
 		819EE2442BDAB3F800B082BF /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EE2432BDAB3F800B082BF /* detail.swift */; };
+		819EE2462BDB69F800B082BF /* listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EE2452BDB69F800B082BF /* listview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		819EE2302BDA071600B082BF /* testtttUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testtttUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		819EE2412BDA998200B082BF /* imagelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagelist.swift; sourceTree = "<group>"; };
 		819EE2432BDAB3F800B082BF /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
+		819EE2452BDB69F800B082BF /* listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				819EE2432BDAB3F800B082BF /* detail.swift */,
 				819EE2172BDA071600B082BF /* Assets.xcassets */,
 				819EE2192BDA071600B082BF /* Preview Content */,
+				819EE2452BDB69F800B082BF /* listview.swift */,
 			);
 			path = testttt;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819EE2462BDB69F800B082BF /* listview.swift in Sources */,
 				819EE2422BDA998200B082BF /* imagelist.swift in Sources */,
 				819EE2162BDA071400B082BF /* ContentView.swift in Sources */,
 				819EE2442BDAB3F800B082BF /* detail.swift in Sources */,
