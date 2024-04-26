@@ -8,31 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var expandedIndexes: Set<Int> = []
+    @State private var expandedIndex: Int? = nil
     
     let accordionData = [
-        ("Accordion 1 Title", "Accordion 1 Contentt"),
+        ("Accordion 1 Title", "Accordion 1 Content"),
         ("Accordion 2 Title", "Accordion 2 Content"),
         ("Accordion 3 Title", "Accordion 3 Content"),
         ("Accordion 4 Title", "Accordion 4 Content"),
-        ("Accordion 5 Title", "Accordion 5 Content")
+        ("Accordion 5 Title", "Accordion 5 Contenttt")
     ]
     
     var body: some View {
         VStack {
-            ForEach(0..<accordionData.count, id: \.self) { index in
+            ForEach(accordionData.indices, id: \.self) { index in
                 AccordionView(title: self.accordionData[index].0,
                               content: self.accordionData[index].1,
-                              isExpanded: self.expandedIndexes.contains(index),
+                              isExpanded: self.expandedIndex == index,
                               onToggle: {
                                   withAnimation {
-                                      if self.expandedIndexes.contains(index) {
-                                          self.expandedIndexes.remove(index)
-                                      } else {
-                                          self.expandedIndexes.insert(index)
-                                      }
+                                      self.expandedIndex = (self.expandedIndex == index) ? nil : index
                                   }
                               })
+                    .transition(.slide)
             }
         }
     }
